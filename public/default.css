@@ -1,0 +1,182 @@
+* {	
+	font-family: "Rockwell Extra Bold", "Rockwell Bold", monospace;
+	/*font-family: Consolas, monaco, monospace;*/
+	/*font-family: Futura,"Trebuchet MS",Arial,sans-serif*/
+	/*font-family: Copperplate,"Copperplate Gothic Light",fantasy*/
+/*font-family: "Franklin Gothic Medium","Franklin Gothic","ITC Franklin Gothic",Arial,sans-serif*/
+/*font-family: "Helvetica Neue",Helvetica,Arial,sans-serif*/
+/*font-family: Verdana,Geneva,sans-serif*/
+/*font-family: "Hoefler Text","Baskerville Old Face",Garamond,"Times New Roman",serif*/
+}
+
+body {
+	overflow-y: auto;
+	
+	display: flex;
+	flex-flow: column;
+	align-content: center;
+	align-items: center;
+
+	background-image: url('/images/background.jpg');
+	background-size: auto 100%;
+	background-position: center center;
+	background-attachment: fixed;
+	/*background: linear-gradient(to bottom, rgba(255,255,255,0.2) 0%,rgba(255,255,255,0.2) 100%), url('/images/pill2.jpg');*/
+	margin: 0px;
+	overflow: hidden;
+	/*color: white !important;*/
+
+}
+
+.page {
+	margin-top: 0px;
+	background-color: rgba(255,255,255,0.6);
+	height: 100vh;
+}
+
+#page-login {
+	/*display: none;*/
+	padding: 5%;
+}
+
+#page-lobby{
+	display: none;
+	padding: 5%;
+}
+
+div.players{
+	float: right;
+}
+
+#warning {
+	display: none;
+	margin: 0 0 0 15px;
+}
+
+span {
+	font-size: 1.5em;
+	margin-bottom: 3px;
+}
+	
+	.page.login button {
+		height: 35px;
+		width: 100%;
+	}
+	
+	.page.login input {
+		width: 100%;
+		height: 35px;
+	}
+
+	#userLabel, #welcome {
+		display: inline-block;
+		color: #666;
+		margin: 0;
+	}
+ 
+#userList {
+	margin-top: 5%;
+	width: 100%;
+}
+
+.page.game button {
+	margin-bottom: 10px;	
+}
+
+#page-game {
+	width: 100%;
+	display: none;
+	position: relative;
+}
+
+
+
+#game-board {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+#resultboard {
+	position: absolute;
+	width: 40%;
+	margin: auto;
+	display: none;
+	text-align: center;
+	vertical-align: middle;
+	white-space: pre-line;
+	top: 20%;
+	background-color: rgba(255,255,255,0.6);
+	border-radius: 2em;
+	height: 50vh;
+}
+
+#userboard {
+	margin-top: 5%;
+	padding-right: 1em;
+	padding-left: 1em;
+	height: 50vh;
+	background-color: rgba(255,255,255,0.4);
+	border-radius: 1em;
+}
+
+#result > p {
+	font-size: 2em;
+	margin: 0;
+}
+
+.scorebox {
+	text-align: center;
+	vertical-align: middle;
+	padding: 5px;
+	font-size: 1em;
+	color: white;
+	position: absolute;
+	z-index: 99;
+}
+
+#countred {
+	background-color: #f00;
+}
+
+#countblue {
+	background-color: #00f;
+}
+
+#time {
+	background-color: #444;
+	font-size: 1.5em;
+}
+
+p.players {
+	font-size: 4em !important;
+}
+
+p#startgame {
+	font-size: 1em;
+}
+
+#playagain {
+	width: 50%;
+	font-size: 1em;
+}
+
+
+#blueScore, #redScore {
+	display: inline-block;
+	margin: 0;
+	padding: 0;
+	font-size: 1.5em;
+}
+
+#blueId, #redId {
+	float: left;
+}
+
+.btn:hover {
+	color : #fff !important;
+	background-color: #444;
+  border-color: #666;
+}

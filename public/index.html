@@ -1,0 +1,119 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Qubix</title>
+		<link rel="stylesheet" href="/default.css" />
+		<script src="/socket.io/socket.io.js"></script>
+		<link href="/bootstrap.min.css" rel="stylesheet" type="text/css">
+		<link rel='shortcut icon' href='images/favicon.ico?v=2'/ >
+	</head>
+	<body>
+		<div class="page login" id='page-login'>
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-2"></div>
+					<div class="col-xs-8">          
+						<h1 class='Qubix'>Qubix</h1><hr/>
+						<div id="instruction">
+							<h4><span>Rule:</span>
+							<br/>How are your clicking skills? <br/> Click your opponent's objects to change them to your color, but don't click the same object twice, or else you give it back to your opponent. Whoever has the most points after 30 seconds, wins.<br/><br/>
+							<span>Objects:</span>
+							<br/>Box - 1 point
+							<br/>Diamond - 3 points<br/><br/>
+							<span>Moves:</span>
+							<br/>w/↑, a/←, s/↓, d/→<br/><br/>
+							<span>Click:</span>
+							<br/>Left-click to toggle colors
+							</h4>
+						</div>
+					</div>
+					<div class="col-xs-2"></div>
+				</div>
+				<br>
+				<div class="row">
+					<div class="col-xs-2 col-md-2 col-lg-2"></div>
+					<div class="col-xs-6 col-md-6 col-lg-6">
+						<input id='username' placeholder="Player name (< 8 Characters)"></input>
+					</div>
+					<div class="col-xs-2 col-md-2 col-lg-2">
+						<button class='btn' id='login'>Play</button>
+					</div>
+					<div class="col-xs-2 col-md-2 col-lg-2"></div>
+				</div>
+				<div class="row">
+				<div class="col-xs-2 col-md-2 col-lg-2"></div>
+				<div class="col-xs-8 col-md-8 col-lg-8"><p id="warning"></p></div>
+				<div class="col-xs-2 col-md-2 col-lg-2"></div>
+				</div>
+				<div class="row" style="margin-top: 4vh">
+				<div class="col-xs-2 col-md-2 col-lg-2"></div>
+					<div class="col-xs-8 col-md-8 col-lg-8">need help? reload the page || try other urls (qubixgame1 ~ 5/herokuapp.com )</div>
+					<div class="col-xs-2 col-md-2 col-lg-2"></div>
+				</div>
+			</div>
+		</div>
+
+		<div class="page lobby" id='page-lobby'>
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-2"></div>
+					<div class="col-xs-8">
+						<h1>Qubix</h1>
+						<hr/>
+						<div>
+						<h4 id='welcome'>Welcome  </h4>
+						<h3 id='userLabel'></h3>
+						</div>
+						<div id='userboard'>
+							<div class="row">
+								<h3 class="col-xs-12" class='players'>Players</h3>
+								<p class="col-xs-12" id='startgame' class="players">Click players to start game</p>
+							</div>
+							<div id='userList'>
+							 No users online
+							</div>
+						</div>
+					</div>
+					<div class="col-xs-2"></div>
+				</div>
+			</div>
+		</div>
+	
+		<div class="page game" id='page-game'>
+			<div id="scorebar">
+					<div id='countred' class='scorebox col-xs-4'>
+						<small id='redId'></small>
+						<p id='redScore'></p>
+					</div>
+					<div id='time' class='scorebox col-xs-4'></div>
+					<div id='countblue' class='scorebox col-xs-4'>
+						<small id='blueId'></small>
+						<p id='blueScore'></p>
+					</div>
+			</div>
+			<div id='game-board'></div>
+		</div>
+
+		<div class='page' id="resultboard">
+			<div id='result'>
+				<p class='win'></p>
+				<h1 class='winner'></h1>
+				<p class='you'></p>
+				<button id='playagain' class="btn" onClick="window.location.reload()" >Play again</button>
+			</div>
+			<div id="background"></div>
+		</div>
+	</body>	
+
+		<script src="lib/jquery-1.11.1.js"></script>
+		<script src="lib/WinJS.4.0/js/WinJS.min.js"></script>
+		<script src="//threejs.org/build/three.js"></script>
+		<script src="js/renderers/Projector.js"></script>
+		<script src="js/renderers/CanvasRenderer.js"></script>
+		<script src="js/libs/stats.min.js"></script>
+		<script src="js/libs/tween.min.js"></script>
+		<script src="/client.js"></script>
+		<script src="/default.js"></script>
+
+	</body>
+</html>
