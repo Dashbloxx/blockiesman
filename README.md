@@ -2,7 +2,7 @@
 
 [Qubix](https://qubixgame.herokuapp.com/) is a real-time multiplayer 3D browser game using Three.js and Socket.io.
 
-[![qubix presentation video | YouTube](https://img.youtube.com/vi/Ow2GMddW66Y/2.jpg)](http://youtu.be/Ow2GMddW66Y)
+[![qubix presentation video | YouTube](https://img.youtube.com/vi/Ow2GMddW66Y/0.jpg)](http://youtu.be/Ow2GMddW66Y)
 
 ## Running Locally
 
