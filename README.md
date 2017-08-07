@@ -19,6 +19,8 @@ The above script will go through the following steps:
 1. install npm dependencies
 1. run the server
 
+visit `localhost:3000` in your browser
+
 ## Rule
 
 ### Prerequisite
