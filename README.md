@@ -2,7 +2,7 @@
 
 This is a a real-time multiplayer 3D browser game using Three.js and Socket.io.
 
-[![qubix presentation video | YouTube](./.github/youtube.png)](http://youtu.be/Ow2GMddW66Y)
+[![qubix presentation video | YouTube]((https://img.youtube.com/vi/Ow2GMddW66Y&feature=youtu.be/0.jpg))](http://youtu.be/Ow2GMddW66Y)
 
 You can try a [live demo](https://qubixgame.herokuapp.com/)
 
