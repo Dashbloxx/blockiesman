@@ -2,7 +2,7 @@
 
 This is a a real-time multiplayer 3D browser game using Three.js and Socket.io.
 
-[![qubix presentation video | YouTube](./.github/youtube.png)](youtu.be/Ow2GMddW66Y)
+[![qubix presentation video | YouTube](./.github/youtube.png)](http://youtu.be/Ow2GMddW66Y)
 
 You can try a [live demo](https://qubixgame.herokuapp.com/)
 
@@ -28,8 +28,8 @@ You will need two players to play this game. Alternately, you can run the game w
 Click your opponent's objects to change them to your color, but don't click the same object twice, or else you give it back to your opponent. Whoever has the most points after 30 seconds, wins.
 
 **Objects:** 
-Box - 1 point 
-Diamond - 3 points
+- Box - 1 point 
+- Diamond - 3 points
 
 **Moves:**
 - w/↑, a/←, s/↓, d/→
